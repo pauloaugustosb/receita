@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\ProjetoReceita.Comunicacao\ProjetoReceita.Comunicacao.csproj" />
+    <ProjectReference Include="..\..\Shared\ProjetoReceita.Exceptions\ProjetoReceita.Exceptions.csproj" />
+    <ProjectReference Include="..\ProjetoReceita.Application\ProjetoReceita.Application.csproj" />
+    <ProjectReference Include="..\ProjetoReceita.Infrastructure\ProjetoReceita.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
